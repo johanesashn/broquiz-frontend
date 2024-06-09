@@ -1,0 +1,17 @@
+.quiz-container {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.quiz img.blob {
+    filter: blur(10px);
+    width: 40vmin;
+    position: absolute;
+    animation: 10s blob3 infinite ease-in-out;
+}
+
+@media (max-width: 600px){
+    .quiz-container {
+        padding-bottom: 70px;
+    }
+}

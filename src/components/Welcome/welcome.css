@@ -1,0 +1,61 @@
+.welcome {
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.welcome input {
+    border: none;
+    padding: .3rem .6rem;
+    width: 100%;
+}
+
+.welcome h1 {
+    margin-bottom: 30px;
+}
+
+.category {
+    border-radius: 5px;
+    min-height: 90vh;
+}
+
+.category .categories {
+    display: grid;
+    grid-template-areas: "btn btn btn";
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.categories button:hover {
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+.category button {
+    transition: all .3s;
+    border: none;
+    background-color: var(--white);
+    color: var(--black);
+    height: 60px;
+    text-transform: capitalize;
+}
+
+.category button.join {
+    grid-area: btn;
+}
+
+@media (max-width: 820px){
+    .category button {
+        height: 80px;
+    }
+}
+
+@media (max-width: 600px){
+    .category {
+        padding-bottom: 50px;
+    }
+
+    .category .categories {
+        grid-template-areas: "btn btn";
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

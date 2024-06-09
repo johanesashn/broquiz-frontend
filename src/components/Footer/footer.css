@@ -1,0 +1,28 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--purple);
+    padding: 15px 30px;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+footer p {
+    font-size: .8rem;
+}
+
+@media (max-width: 600px){
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    footer p:nth-child(1){
+        display: none;
+    }
+}

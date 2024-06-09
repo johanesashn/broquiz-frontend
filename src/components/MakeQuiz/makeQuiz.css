@@ -1,0 +1,102 @@
+.make {
+    position: relative;
+}
+
+.make > * {
+    z-index: 2;
+}
+
+.make .banner {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.make .banner span {
+    color: var(--red);
+    font-weight: 500;
+}
+
+.make-content {
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+.make-question {
+    background-color: var(--white);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.make-question input {
+    background-color: var(--light-grey);
+    width: 100%;
+    padding: .3rem .6rem;
+    border-radius: 5px;
+}
+
+.make-question .choice {
+    width: 100%;
+}
+
+.make-question label {
+    font-size: .9rem;
+    font-weight: 500;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    margin-left: .3rem;
+}
+
+.make-content button {
+    width: 90px;
+}
+
+.make-question button {
+    margin-top: 10px;
+    width: fit-content;
+    margin-left: auto;
+    display: block;
+}
+
+.make-question .answer label {
+    margin-bottom: 0px;
+}
+
+.choice span {
+    text-transform: uppercase;
+}
+
+.answer-choice {
+    display: flex;
+    gap: 0;
+    justify-content: start;
+    width: fit-content;
+    gap: 10px;
+    padding-left: 5px;
+}
+
+.answer-choice button{
+    border: 1px solid var(--black);
+    display: block;
+    text-transform: uppercase;
+}
+
+.answer-choice .purple {
+    border: 1px solid var(--purple);
+}
+
+.make img.blob {
+    filter: blur(10px);
+    width: 30vmin;
+    position: absolute;
+    animation: 10s blob3 infinite ease-in-out;
+    z-index: -1;
+}
+
+@media (max-width: 600px){
+    .make {
+        padding-bottom: 50px;
+    }
+}

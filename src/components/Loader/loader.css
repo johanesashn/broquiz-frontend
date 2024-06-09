@@ -1,0 +1,14 @@
+:root {
+    --white: #fff;
+    ---black: #000
+}
+
+.loader {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--light-grey);
+}
