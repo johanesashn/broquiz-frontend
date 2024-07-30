@@ -96,7 +96,7 @@ export default function App(){
   const getUsers = async () => {
     try {
       // const response = await axios.get("http://localhost:3000/users")
-      const response = await axios.get("https://broquiz-backend-production.up.railway.app/users")
+      const response = await axios.get("https://backend-broquiz-production-f1f5.up.railway.app/users")
 
       // sort users by points
       const sortedUsersByPoints = response.data.sort((a, b) => b.points - a.points)
@@ -111,7 +111,7 @@ export default function App(){
 
   const addUser = async (user) => {
     try {
-      const response = await axios.post("https://broquiz-backend-production.up.railway.app/users", user, {
+      const response = await axios.post("https://backend-broquiz-production-f1f5.up.railway.app/users", user, {
         headers: {
           "Content-Type": "application/json"
         }
@@ -124,7 +124,7 @@ export default function App(){
 
   const addQuestion = async (question) => {
     try {
-      const response = await axios.post("https://broquiz-backend-production.up.railway.app/question", question, {
+      const response = await axios.post("https://backend-broquiz-production-f1f5.up.railway.app/question", question, {
             headers: {
                 "Content-Type": "application/json"
             }
@@ -138,7 +138,7 @@ export default function App(){
 
   const getOnlineQuestions = async () => {
     try {
-      const response = await axios.get("https://broquiz-backend-production.up.railway.app/question")
+      const response = await axios.get("https://backend-broquiz-production-f1f5.up.railway.app/question")
       setOnlineQuestions(response.data)
     } catch (error) {
       console.log(error.message)
