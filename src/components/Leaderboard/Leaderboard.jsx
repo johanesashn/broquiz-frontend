@@ -34,7 +34,7 @@ export default function Leadboard(props){
             <div className="row">{user.username}</div>
             <div className="row">{user.points}</div>
             <div className="row">{user.country}</div>
-            <div className="row">{user.status}</div>
+            <div className="row">{user.status.charAt(0).toUpperCase() + user.status.slice(1)}</div>
         </div>
     ))
 
