@@ -67,7 +67,7 @@ export default function Questions (props){
             setScore(updatedScore)
             setSubmit(true)
 
-            const response = await axios.patch(`https://broquiz-backend-production.up.railway.app/users/${props.loginUser._id}`, {
+            const response = await axios.patch(`https://backend-broquiz-production-f1f5.up.railway.app/users/${props.loginUser._id}`, {
                 ...props.loginUser, 
                 points: currentPoint,
                 status: getStatus(currentPoint)
