@@ -46,11 +46,11 @@ export default function App(){
     const prevMenu = window.localStorage.getItem("prevMenu")
     const parsePrevMenu = JSON.parse(prevMenu)
 
-    if (parsePrevUser.username !== undefined){
+    if (parsePrevUser && parsePrevUser.username !== undefined){
       setLoginUser(parsePrevUser)
     }
 
-    if (parsePrevMenu.home !== true){
+    if (parsePrevMenu && parsePrevMenu.home !== true){
       setMenu(parsePrevMenu)
     }
   }, [users])
