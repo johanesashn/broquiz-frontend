@@ -39,21 +39,21 @@ export default function App(){
     }, 1500);
   }, [])
 
-  // useEffect(() => {
-  //   const prevUser = window.localStorage.getItem("prevUser")
-  //   const parsePrevUser = JSON.parse(prevUser)
+  useEffect(() => {
+    const prevUser = window.localStorage.getItem("prevUser")
+    const parsePrevUser = JSON.parse(prevUser)
     
-  //   const prevMenu = window.localStorage.getItem("prevMenu")
-  //   const parsePrevMenu = JSON.parse(prevMenu)
+    const prevMenu = window.localStorage.getItem("prevMenu")
+    const parsePrevMenu = JSON.parse(prevMenu)
 
-  //   if (parsePrevUser.username !== undefined){
-  //     setLoginUser(parsePrevUser)
-  //   }
+    if (parsePrevUser.username !== undefined){
+      setLoginUser(parsePrevUser)
+    }
 
-  //   if (parsePrevMenu.home !== true){
-  //     setMenu(parsePrevMenu)
-  //   }
-  // }, [users])
+    if (parsePrevMenu.home !== true){
+      setMenu(parsePrevMenu)
+    }
+  }, [users])
 
   useEffect(() => {
       const prevUser = window.localStorage.getItem("prevUser")
